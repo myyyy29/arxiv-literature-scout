@@ -1,0 +1,22 @@
+# Visual Studio cache
+.vs/
+
+# Build output
+out/
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Compiled / temp files
+*.ipch
+*.obj
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.log
+
+# Videos (do NOT push to GitHub)
+*.mp4
+*.mov
