@@ -46,15 +46,28 @@ Relevance is computed using a simple keyword-based scoring method.
 - Extra bonus if a keyword appears in both title and abstract
 
 Papers are then sorted by score, and the Top 5 most relevant papers are selected.
+
+##Demo Video
+
+Demo video: https://drive.google.com/drive/folders/19a0Mp7mQovGaZa04LofFb7Sz2VOagVic?usp=drive_link
 ## Output
 
-The system generates:
+The system generates two output files: a machine-readable JSONL file and a human-readable Markdown report.
 
-- papers.jsonl  (machine-readable)
-- report.md     (human-readable)
+Example JSONL output (`papers.jsonl`):
 
-The JSONL format enables downstream processing,
-while Markdown provides a structured summary.
+```json
+{"arxiv_id":"2510.13343","title":"AOAD-MAT: Transformer-based multi-agent deep reinforcement learning model considering agents' order of action decisions","score":16,"url":"http://arxiv.org/abs/2510.13343v1"}
+### 1. AOAD-MAT: Transformer-based multi-agent deep reinforcement learning model considering agents' order of action decisions
+
+- arXiv ID: 2510.13343
+- Authors: Shota Takayama, Katsuhide Fujita
+- Categories: cs.AI, cs.LG, cs.MA
+ Abstract (preview)
+ Multi-agent reinforcement learning focuses on training the behaviors of multiple learning agents that coexist in a shared environment...
+ Summary
+ Title: AOAD-MAT: Transformer-based multi-agent deep reinforcement learning model considering agents' order of action decisions  
+Relevance Score: 16
 ## Build
 
 Requirements:
@@ -75,3 +88,4 @@ Build (Visual Studio):
 Build (CLI):
 cmake -S . -B out/build -G Ninja
 cmake --build out/build
+
