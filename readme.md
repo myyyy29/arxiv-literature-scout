@@ -47,9 +47,7 @@ Relevance is computed using a simple keyword-based scoring method.
 
 Papers are then sorted by score, and the Top 5 most relevant papers are selected.
 
-##Demo Video
 
-Demo video: https://drive.google.com/drive/folders/19a0Mp7mQovGaZa04LofFb7Sz2VOagVic?usp=drive_link
 ## Output
 
 The system generates two output files: a machine-readable JSONL file and a human-readable Markdown report.
@@ -67,7 +65,8 @@ Example JSONL output (`papers.jsonl`):
  Multi-agent reinforcement learning focuses on training the behaviors of multiple learning agents that coexist in a shared environment...
  Summary
  Title: AOAD-MAT: Transformer-based multi-agent deep reinforcement learning model considering agents' order of action decisions  
-Relevance Score: 16
+ Relevance Score: 16
+```
 ## Build
 
 Requirements:
@@ -89,3 +88,6 @@ Build (CLI):
 cmake -S . -B out/build -G Ninja
 cmake --build out/build
 
+## Demo Video
+
+Demo video: https://drive.google.com/drive/folders/19a0Mp7mQovGaZa04LofFb7Sz2VOagVic?usp=drive_link
